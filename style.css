@@ -62,7 +62,7 @@ p {
 
 .description {
     width: 90%;
-    height: auto; /* можно убрать фиксированную высоту */
+    height: auto; 
     padding-top: 20px;
     display: flex;
     justify-content: center;
@@ -72,7 +72,7 @@ p {
     font-size: 16px;
     line-height: 26px;
     color: #727272;
-    margin: 0 auto; /* чтобы центрировать по горизонтали */
+    margin: 0 auto; 
 }
 
 .button {
@@ -121,13 +121,13 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap; /* позволяет элементам "опускаться" при малых разрешениях */
+    flex-wrap: wrap; 
 }
 
 .imageNum {
     display: flex;
     gap: 49px;
-    flex-wrap: wrap; /* добавлен wrap для гибкости */
+    flex-wrap: wrap; 
     justify-content: center;
 }
 
@@ -135,7 +135,7 @@ p {
     display: flex;
     align-items: center;
     gap: 10px;
-    margin-bottom: 20px; /* добавлен отступ снизу для разделения */
+    margin-bottom: 20px; 
     justify-content: center;
 }
 
