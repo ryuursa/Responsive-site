@@ -1,0 +1,395 @@
+* {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+}
+
+main {
+    width: 100%;
+}
+
+.first-screen {
+    height: 700px;
+    background: #EEEFF1;
+}
+
+p {
+    margin: 0;
+}
+
+.navMenu {
+    padding-top: 79px;
+    padding-left: 20px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.navMenu-item {
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.navMenu-item:hover {
+    color: #34547A;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 85px;
+}
+
+.title {
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 42px;
+}
+
+.description {
+    width: 90%;
+    height: auto; /* можно убрать фиксированную высоту */
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #727272;
+    margin: 0 auto; /* чтобы центрировать по горизонтали */
+}
+
+.button {
+    padding-top: 40px;
+    text-align: center;
+}
+
+.button button {
+    width: 225px;
+    height: 65px;
+    background-color: #34547A;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    cursor: pointer;
+}
+
+.about-container {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 112px;
+    padding-bottom: 100px;
+}
+
+.about-me {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 37px;
+}
+
+.text {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #727272;
+    margin-top: 50px;
+}
+.numbers {
+    height: 250px;
+    background: #34547A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* позволяет элементам "опускаться" при малых разрешениях */
+}
+
+.imageNum {
+    display: flex;
+    gap: 49px;
+    flex-wrap: wrap; /* добавлен wrap для гибкости */
+    justify-content: center;
+}
+
+.number-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px; /* добавлен отступ снизу для разделения */
+    justify-content: center;
+}
+
+.number-item img {
+    width: 50px;
+    height: 50px;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.number-value {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 21px;
+    color: white;
+    margin: 0;
+}
+
+.number-text {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: white;
+    margin: 0;
+}
+
+.video {
+    background: #EEEFF1;
+    height: 904px;
+    padding-top: 100px;
+    text-align: center;
+}
+
+.videoTitle-container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.videoTitle {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 100%;
+}
+
+.videoDescription {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #727272;
+    margin-top: 20px;
+}
+
+.videoPicture {
+    width: 100%;
+    max-width: 1004px;
+    margin: 50px auto 0 auto;
+    position: relative;
+}
+
+.videoPicture img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80px;
+    height: 80px;
+    background: rgba(4, 4, 4, 0.8);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.play-button img {
+    width: 50px;
+    height: 50px;
+}
+
+.Footer {
+    height: 151px;
+    padding: 30px 0;
+    background: #34547A;
+}
+
+.footer-container {
+    padding-top: 50px;
+    padding-left: 20px;
+    text-align: center;
+}
+
+.Name {
+    width: 219px;
+    height: 19px;
+    color: white;
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 100%;
+}
+
+.rights {
+    width: 193px;
+    height: 12px;
+    color: white;
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 164%;
+}
+
+@media screen and (max-width: 768px) {
+    .navMenu {
+        padding-left: 10px;
+        gap: 10px;
+    }
+
+    .title {
+        font-size: 28px;
+        padding-left: 20px;
+    }
+
+    .description {
+        font-size: 14px;
+        width: 90%;
+    }
+
+    .button button {
+        width: 200px;
+        height: 55px;
+    }
+
+    .about-container {
+        width: 90%;
+        padding-top: 80px;
+    }
+
+    .imageNum {
+        gap: 30px; 
+    }
+
+    .number-item {
+        gap: 8px; 
+    }
+
+    .numbers {
+        height: auto; 
+        padding: 20px 0; 
+    }
+    .video {
+        padding-top: 50px;
+        height: auto;
+    }
+
+    .videoTitle-container {
+        width: 90%;
+    }
+
+    .videoPicture {
+        width: 100%;
+        height: auto;
+    }
+
+    .Footer {
+        height: auto;
+        padding-top: 30px;
+    }
+
+    .footer-container {
+        padding-left: 10px;
+    }
+    .rights {
+        font-size: 12px; 
+        max-width: 100%; 
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .navMenu {
+        flex-direction: column;
+        gap: 15px;
+        padding-left: 20px;
+        padding-top: 10px;
+    }
+
+    .title {
+        font-size: 24px;
+        padding-left: 10px;
+        padding-top: 20px;
+    }
+
+    .description {
+        font-size: 14px;
+        padding-left: 10px;
+    }
+
+    .button button {
+        width: 180px;
+        height: 50px;
+    }
+
+    .about-container {
+        padding-top: 60px;
+    }
+    .numbers {
+        height: auto;
+        padding: 10px 0; 
+    }
+
+    .imageNum {
+        gap: 20px; 
+    }
+
+    .number-item {
+        margin-bottom: 10px; 
+    }
+
+    
+       
+    .videoPicture {
+            max-width: none;
+            width: 100%;
+            margin: 30px 0 0 0; 
+    }
+    
+   
+        .Footer {
+            padding: 20px 0;
+        }
+    
+        .footer-container {
+            padding-left: 10px;
+            padding-top: 10px;
+        }
+    
+        .rights {
+            font-size: 12px;
+            width: 100%;
+            max-width: 100%;
+        }
+    
+        .Name {
+            font-size: 18px;
+            width: 100%;
+        }
+    
+}
